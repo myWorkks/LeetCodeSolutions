@@ -4,41 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Solution844 {
-
 	public boolean backspaceCompare(String s, String t) {
 		List<Character> sList = new ArrayList<Character>();
 		List<Character> tList = new ArrayList<Character>();
-		if (s.equals(t))
-			return true;
-		else if (s.contains("#") || t.contains("#")) {
-			for (int i = 0; i < s.toCharArray().length; i++) {
-				if (s.charAt(i) != '#') {
-					sList.add(s.charAt(i));
-				} else {
 
-					if (sList.size() > 0) {
+		for (int i = s.toCharArray().length - 1; i >= 0; i--) {
+			if (s.charAt(i) != '#')
+				sList.add(s.charAt(i));
+			else
 
-						sList.remove(sList.size() - 1);
-					} else
-						continue;
-				}
+				continue;
 
-			}
-			for (int i = 0; i < t.toCharArray().length; i++) {
-				if (t.charAt(i) != '#') {
-					tList.add(t.charAt(i));
-				} else {
-					if (tList.size() > 0) {
-						tList.remove(tList.size() - 1);
-					} else
-						continue;
-				}
+		}
+		for (int i = t.toCharArray().length - 1; i >= 0; i--) {
+			if (t.charAt(i) != '#')
+				tList.add(t.charAt(i));
+			else
+				continue;
+		}
 
-			}
-			return sList.equals(tList);
-		} else
-			return false;
+		return sList.size() == tList.size() ? sList.equals(tList) : false;
 	}
+
 }
 
 public class BackspaceStringCompare844 {
@@ -51,3 +38,37 @@ public class BackspaceStringCompare844 {
 	}
 
 }
+//public boolean backspaceCompare(String s, String t) {
+//	List<Character> sList = new ArrayList<Character>();
+//	List<Character> tList = new ArrayList<Character>();
+//	if (s.equals(t))
+//		return true;
+//	else if (s.contains("#") || t.contains("#")) {
+//		for (int i = 0; i < s.toCharArray().length; i++) {
+//			if (s.charAt(i) != '#') {
+//				sList.add(s.charAt(i));
+//			} else {
+//
+//				if (sList.size() > 0) {
+//
+//					sList.remove(sList.size() - 1);
+//				} else
+//					continue;
+//			}
+//
+//		}
+//		for (int i = 0; i < t.toCharArray().length; i++) {
+//			if (t.charAt(i) != '#') {
+//				tList.add(t.charAt(i));
+//			} else {
+//				if (tList.size() > 0) {
+//					tList.remove(tList.size() - 1);
+//				} else
+//					continue;
+//			}
+//
+//		}
+//		return sList.equals(tList);
+//	} else
+//		return false;
+//}
