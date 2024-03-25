@@ -21,7 +21,7 @@ public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
 			list.add(false);
 			
 	}
-	System.out.println(maxValue);
+	//System.out.println(maxValue);
 	return list;
         
     }
