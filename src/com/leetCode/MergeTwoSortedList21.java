@@ -1,7 +1,11 @@
 package com.leetCode;
 
 class Solution21 {
+	static class ListNode {
+	}
+
 	public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+		return list2;
 
 	}
 }
