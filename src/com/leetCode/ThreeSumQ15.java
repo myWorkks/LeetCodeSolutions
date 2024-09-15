@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 class Solution1 {
 	public List<List<Integer>> threeSum(int[] nums) {
-//		
+		return null;
 	}
 }
 

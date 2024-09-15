@@ -15,19 +15,17 @@ class Solution2810 {
 		while (i < s.length()) {
 
 			if (s.charAt(i) == 'i') {
-				torev = s.substring(0, i + 1);
-				//System.out.println("torev " + torev);
+				torev = s.substring(0, i );
+
 				ff = reverse(torev);
 
 				s = ff + s.substring(i + 1, s.length());
 
-//				System.out.println(s);
-//				System.out.println("string " + ff);
 			}
 			i++;
 		}
 
-		return s.replace("i", "");
+		return s;
 	}
 }
 
@@ -37,6 +35,7 @@ public class FaultyKeyboard2810 {
 		Solution2810 s = new Solution2810();
 		String ff = s.finalString("goci");
 		System.out.println(ff);
+
 	}
 
 }
