@@ -1,8 +1,6 @@
 package com.leetCode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -37,5 +35,14 @@ class Solution2284 {
 public class SenderWithLargestWordCount2284 {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
+=======
+		Solution2284 s = new Solution2284();
+		String ss = s.largestWordCount(new String[] {
+				"k a c N O O W d R U r Q s M i R a x y u T P S O H S d R z A S s c j m h c L Z j r Y u m n m w q ZW",
+			
+		},new String[] {});
+		System.out.println(ss);
+>>>>>>> bc438b43cdc61b6301655d71e7d7d5b3b3efcd91
 	}
 }

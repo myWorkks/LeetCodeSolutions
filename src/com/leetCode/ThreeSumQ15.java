@@ -1,13 +1,14 @@
 package com.leetCode;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 class Solution1 {
 	public List<List<Integer>> threeSum(int[] nums) {
 		return null;
+<<<<<<< HEAD
+=======
+//		
+>>>>>>> bc438b43cdc61b6301655d71e7d7d5b3b3efcd91
 	}
 }
 
