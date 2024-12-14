@@ -1,19 +1,41 @@
 package com.leetCode;
 
 class Solution21 {
-<<<<<<< HEAD
-//	public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-//
-//	}
-=======
+
 	static class ListNode {
+
+		int val;
+		ListNode next;
+
+		public ListNode(int value) {
+			super();
+			this.val = value;
+			this.next = null;
+		}
+
+		public ListNode(int i, ListNode listNode) {
+			this.val = i;
+			this.next = listNode;
+		}
+
+		@Override
+		public String toString() {
+			return "ListNode [val=" + val + ", next=" + next + "]";
+		}
+
 	}
 
 	public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+
+		while (list1.next != null && list2.next != null) {
+
+		}
 		return list2;
 
 	}
->>>>>>> bc438b43cdc61b6301655d71e7d7d5b3b3efcd91
+
+	
+
 }
 
 public class MergeTwoSortedList21 {
